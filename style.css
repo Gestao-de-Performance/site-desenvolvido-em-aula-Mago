@@ -35,7 +35,7 @@ h1, h2, p{
 
 @media screen and (max-width: 1024px){
     .marginSite {
-        margin: 5% 14%;
+        margin: 5%;
     }
 }
 
@@ -180,7 +180,7 @@ h1{
     }
 
     .subtituloInformacoes {
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
     .imgInformacoes{
@@ -190,6 +190,20 @@ h1{
     .textoInformacoes {
         max-width: 80%;
         margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    h1 {
+        font-size: 1.1rem;
+    }
+
+    .subtituloInformacoes {
+        font-size: 2.5rem;
+    }
+
+    .textoInformacoes {
+        max-width: 100%;
     }
 }
 
@@ -256,12 +270,45 @@ h1{
 .marginTextoSkill{
     margin: 2% 0;
 }
+
+@media screen and (max-width: 1024px){
+    .posicaoPersonagem{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .containerEscolhaCursos {
+        min-width: 0;
+        flex-wrap: wrap;
+    }
+
+    .quebraDeLinha {
+        white-space: break-spaces;
+    }
+
+    .containerBotoesEscolhaCursos {
+        gap: 5%;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .botoesEscolhaCursos{
+        width: 34px;
+        height: 34px;
+    }
+
+    .botoesEscolhaCursos > img{
+        width: 34px;
+        height: 34px;
+    }
+}
 /*Fim Cursos*/
 
 /*Inicio Botão Inscrever-se*/
 .posicionamentoBotaoInscrever{
     position: relative;
-    margin: 0 17%;
+    margin: 0 20%;
     top: -140px;
 }
 
@@ -273,6 +320,23 @@ h1{
     padding: 2%;
     font-size: 2rem;
     box-shadow: 0 4px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 1024px){
+    .posicionamentoBotaoInscrever{
+        margin: 0 5%;
+        top: -38px;
+    }
+
+    .botaoInscreverSe{
+        width: 96%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .posicionamentoBotaoInscrever {
+        top: -19px;
+    }
 }
 /*Fim Botão Inscrever-se*/
 
@@ -289,6 +353,18 @@ h1{
 
 .botaoCursosGratuitos:hover{
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 1024px){
+    .botaoCursosGratuitos{
+        width: 49%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .botaoCursosGratuitos {
+        width: 100%;
+    }
 }
 /*Fim Cursos Gratuitos*/
 
@@ -327,11 +403,55 @@ h1{
 .leituraPostBlog{
     opacity: 0.8;
 }
+
+@media screen and (max-width: 1024px){
+    .gapBlogMobile{
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .botaoBlog {
+        max-width: 325px;
+    }
+    
+    .botaoBlog > img{
+        width: 100%;
+    }
+}
 /*Fim Blog*/
 
 /*Inicio Rodapé*/
 footer{
     background-color: var(--cor-background-rodape);
     padding: 0.5%;
+}
+
+footer > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+}
+
+.containerRedesSociais{
+    min-width: 177px;
+}
+
+.logoRodape{
+    width: 100%;
+}
+
+.marginRodape{
+    margin-top: 5%;
+}
+
+@media screen and (max-width: 767px){
+    footer > div {
+        gap: 10%;
+        flex-wrap: wrap;
+        height: 400px;
+        align-content: center;
+    }
 }
 /*Fim Rodapé*/
