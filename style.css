@@ -9,8 +9,10 @@
     --cor-branco-fonte: #FFFFFF; 
 
     --cor-background-cursos: #3B1270;
-
     --cor-background-botao: #8E35FF;
+    --cor-background-rodape: #DED0F1;
+
+    --cor-texto-categoria: #CC7F0B;
 }
 
 *{
@@ -28,7 +30,7 @@ h1, h2, p{
 }
 
 .marginSite{
-    margin:7% 17%;
+    margin: 5% 20%;
 }
 
 @media screen and (max-width: 1024px){
@@ -47,13 +49,13 @@ header{
 }
 
 nav{
-    padding: 1%;
+    margin-top: 25px !important;
 }
 
 /*Classe genérica para Display Flex*/
 .displayFlex{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -164,7 +166,7 @@ h1{
 }
 
 .subtituloInformacoes{
-    font-size:6.5rem;
+    font-size: 5.8rem;
 }
 
 .imgInformacoes{
@@ -260,7 +262,7 @@ h1{
 .posicionamentoBotaoInscrever{
     position: relative;
     margin: 0 17%;
-    top: -175px;
+    top: -140px;
 }
 
 .botaoInscreverSe{
@@ -270,5 +272,66 @@ h1{
     text-align: center;
     padding: 2%;
     font-size: 2rem;
+    box-shadow: 0 4px 6px 0px rgba(0, 0, 0, 0.5);
 }
 /*Fim Botão Inscrever-se*/
+
+/*Início Cursos Gratuitos*/
+.tituloCursosGratuitos{
+    margin-bottom: 3%;
+    margin-top: -5%;
+    font-size: 2rem;
+}
+
+.botaoCursosGratuitos{
+    transition: 0.3s;
+}
+
+.botaoCursosGratuitos:hover{
+    transform: scale(1.1);
+}
+/*Fim Cursos Gratuitos*/
+
+/*Inicio Blog*/
+.tituloBlog{
+    font-size: 2rem;
+    margin-bottom: 5%;
+}
+
+.tituloBlog strong{
+    color: var(--cor-background-botao);
+}
+
+.tituloPostBlog{
+    padding: 5% 4% 10%;
+}
+
+.botaoBlog{
+    max-width: 340px;
+    min-height: 370px;
+    box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.2);
+}
+
+.containerPostBlog{
+        padding: 0 4%;
+        display: flex;
+        justify-content: space-between;
+}
+
+.categoriaPostBlog{
+    color: var(--cor-texto-categoria);
+    font-style: italic;
+    font-weight: 600;
+}
+
+.leituraPostBlog{
+    opacity: 0.8;
+}
+/*Fim Blog*/
+
+/*Inicio Rodapé*/
+footer{
+    background-color: var(--cor-background-rodape);
+    padding: 0.5%;
+}
+/*Fim Rodapé*/
